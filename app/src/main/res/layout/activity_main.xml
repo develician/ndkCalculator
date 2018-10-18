@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/num1EditText"
+                android:hint="숫자 1"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/num2EditText"
+                android:hint="숫자 2"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/sumButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sum"/>
+        <Button
+            android:id="@+id/subButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sub"/>
+        <Button
+            android:id="@+id/mulButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mul"/>
+        <Button
+            android:id="@+id/divButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Div"/>
+    </LinearLayout>
+
+</RelativeLayout>
